@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 248, 250, 252;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+/* Estilos personalizados para o tema financeiro */
+.financial-card {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.financial-card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos responsivos */
+@media (max-width: 640px) {
+  .responsive-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animações para gráficos */
+.chart-animation {
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.chart-animation:hover {
+  transform: scale(1.02);
+}
+
+/* Estilos para o chat */
+.chat-message {
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.chat-message-user {
+  background-color: #3b82f6;
+  color: white;
+  border-radius: 1rem 1rem 0 1rem;
+}
+
+.chat-message-ai {
+  background-color: #f3f4f6;
+  color: #1f2937;
+  border-radius: 1rem 1rem 1rem 0;
+}

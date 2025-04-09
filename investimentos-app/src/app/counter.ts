@@ -1,3 +1,6 @@
+declare global {
+  var DB:any;
+}
 'use server'
 import { getCloudflareContext } from '@opennextjs/cloudflare'
 import { headers } from 'next/headers'

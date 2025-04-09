@@ -4,7 +4,12 @@ declare global {
 'use server'
 import { getCloudflareContext } from '@opennextjs/cloudflare'
 import { headers } from 'next/headers'
-
+import type {D1Database}
+  from
+  '@cloudflare/workers-types';
+type Env ={
+  DB:D1Database;
+};
 // 增加计数并记录访问
 export async function incrementAndLog() {
   const cf = await getCloudflareContext()
